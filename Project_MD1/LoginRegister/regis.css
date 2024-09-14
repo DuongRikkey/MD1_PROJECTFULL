@@ -1,0 +1,246 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #f6f6f6;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.navbar-list {
+  padding: 0 60px;
+  background-color: #ffffff;
+}
+.navbar-list-items {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-list-items :nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-list-items :nth-child(1) p {
+  font-weight: 400;
+  line-height: 25px;
+  color: #777777;
+  font-size: 15px;
+  padding: 10px;
+  text-align: start;
+}
+.navbar-list-items :nth-child(1) .logo-main {
+  margin-left: 120px;
+}
+
+.navbar-list-items :nth-child(2) {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.navbar-list-items :nth-child(2) p {
+  font-size: 18px;
+  color: #333333;
+}
+.test i {
+  font-size: 30px;
+  padding: 14px 14px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  color: black;
+  font-size: medium;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-hero {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 60px;
+  padding: 0 70px;
+}
+.navbar-hero :nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar-hero :nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-end {
+  display: flex;
+  align-items: center;
+}
+.navbar-hero :nth-child(1) a {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+.nav-flag {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-up {
+  margin-top: 40px;
+  display: flex;
+  justify-content: start;
+  gap: 190px;
+  background-color: black;
+  padding: 35px 0;
+  align-items: center;
+  border-bottom: 1px solid #323232;
+  margin: 0 55px;
+}
+.footer-superhero {
+  background-color: black;
+  margin-top: 100px;
+}
+.footer-up p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-up a {
+  color: black;
+  padding: 4px 8px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: small;
+}
+.footer-main {
+  background-color: black;
+  display: flex;
+  border-bottom: 1px solid #323232;
+}
+.footer-main {
+  margin: 30px 55px 0 55px;
+}
+.footer-main p a i {
+  border-radius: 50%;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+.ft-right {
+  margin-left: 30px;
+  display: flex;
+  gap: 130px;
+}
+.ft-right ul li {
+  color: #cfcdd1;
+  margin-bottom: 7px;
+}
+h3 {
+  color: white;
+  font-weight: 600;
+}
+.sb-ft {
+  margin: 20px 0;
+  color: white;
+  font-weight: 700;
+  font-size: 60;
+}
+.ft-down {
+  color: white;
+  margin: 20px 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.hine {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Start Main */
+main .ibt {
+  width: 400px;
+  height: 40px;
+  border: 1px solid rgba(200, 200, 200, 0.6);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+main p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 14px;
+}
+main button {
+  width: 400px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.total {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+}
+.lost {
+  font-size: 14px;
+}
+.tk {
+  margin-bottom: 10px;
+}
+.pass {
+  margin-bottom: 10px;
+}
+.lost {
+  font-size: 14px;
+  background-color: aqua;
+}
+.main-text {
+  text-align: center;
+  width: 400px;
+  height: 300px;
+}
+.main-over {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+.text-right {
+  font-size: 15px;
+  font-weight: 300;
+}
+#test2 {
+  width: 450px;
+}
+.total-qty {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  color: red;
+  background-color: white;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.cart-shopping {
+  position: relative;
+}

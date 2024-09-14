@@ -1,0 +1,273 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #d3d9e9;
+}
+
+.row {
+  padding-left: 10px;
+}
+
+.header img {
+  width: 30px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right span {
+  margin-right: 20px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid #b3b3b3;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  table-layout: auto;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a {
+  margin: 0 5px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #b3b3b3;
+  background-color: #fff;
+  color: #000;
+}
+
+.pagination a.active {
+  background-color: #2d8cff;
+  color: #fff;
+}
+
+.container-product {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.create-btn {
+  padding: 10px 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  table-layout: auto;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.actions .update-btn {
+  background-color: green;
+  color: white;
+}
+
+.actions .delete-btn {
+  background-color: red;
+  color: white;
+}
+#overlay {
+  position: fixed;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+#page-inner {
+  width: 100%;
+  margin: 10px 20px 10px 0px;
+  background-color: r;
+  padding: 10px;
+  min-height: 1200px;
+}
+#newproduct {
+  width: 500px;
+  height: 700px;
+  background-color: white;
+  margin: 30%;
+  padding: 30px;
+  border-radius: 10px;
+  position: fixed;
+  top: -400px;
+  left: 90px;
+}
+.form-input {
+  line-height: 30px;
+}
+.form-input input {
+  width: 100%;
+  padding: 5px 0 0 0;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+/* .button {
+    text-align: center;
+  } */
+.button {
+  text-align: end;
+}
+.button button {
+  padding: 5px 20px;
+}
+.create {
+  background-color: red;
+  border: none;
+  color: #fff;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.cancel {
+  border: none;
+  color: black;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.container-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-first p {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+.container-first button {
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+}
+.title-over {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete-btn {
+  padding: 7px 14px;
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+  border-radius: 5px;
+}
+.creat-btn {
+  padding: 7px 14px;
+  background-color: black;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #fdba74;
+  border-radius: 5px;
+}
+textarea {
+  width: 100%;
+}
+.blackpink {
+  background-color: red !important;
+}
+#navmain {
+  display: flex;
+}
+#navbar-right-top {
+  margin-left: 1300px;
+}

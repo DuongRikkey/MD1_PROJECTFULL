@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ddvJu5q5YErqvRfZwm4QxpEGUSduPdL0NEnUZKQAq4s8aUh5rzfEZPlxbJ7qGcFX84c&usqp=CAU"
+    />
+    <title>List Product</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Manager Product</title>
+        <!-- Bootstrap Styles-->
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- FontAwesome Styles-->
+        <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- Custom Styles-->
+        <link href="../assets/css/custom-styles.css" rel="stylesheet" />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ddvJu5q5YErqvRfZwm4QxpEGUSduPdL0NEnUZKQAq4s8aUh5rzfEZPlxbJ7qGcFX84c&usqp=CAU"
+        />
+        <!-- Google Fonts-->
+        <link
+          href="http://fonts.googleapis.com/css?family=Open+Sans"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <link rel="stylesheet" href="./produc.css" />
+        <style></style>
+      </head>
+
+      <body>
+        <div id="wrapper">
+          <nav
+            id="nav-main"
+            class="navbar navbar-default top-navbar"
+            role="navigation"
+          >
+            <a class="navbar-brand" href="index.html">Dream</a>
+            <div id="navbar-right-top">
+              <span id="welcome" style="color: white"></span>
+              <button id="login" type="button">Log In</button>
+              <img
+                style="width: 60px; height: 60px; border-radius: 50%"
+                src="https://tmssl.akamaized.net/images/foto/galerie/ronaldo-cristiano-2017-real-madrid-ballon-d-or-2016-0026751808hjpg-1698686328-120749.jpg?lm=1698686338"
+                alt=""
+              />
+              <i
+                id="btn-logout"
+                style="color: white"
+                class="fa-solid fa-right-from-bracket"
+              ></i>
+            </div>
+
+            <!-- /.dropdown-user -->
+          </nav>
+          <!--/. NAV TOP  -->
+          <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+              <ul class="nav" id="main-menu">
+                <li>
+                  <a href="../manage-category/category.html">
+                    <span> Category</span>
+                  </a>
+                  <a
+                    style="background-color: palevioletred"
+                    href="../manage-product/product.html"
+                  >
+                    <span>Product</span>
+                  </a>
+                  <a href="../manage-user/user.html">
+                    <span>User List</span>
+                  </a>
+                  <a href="../manage-tablelistoder/listoder.html">
+                    <span>List Order</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- /. NAV SIDE  -->
+          <div id="page-wrapper">
+            <div id="page-inner">
+              <div class="row">
+                <div class="col-md-12"></div>
+              </div>
+              <!-- ngay day -->
+              <!-- bảng, form thêm, tìm kiếm<input>, sắp xếp<select-option> -->
+
+              <section class="container-product">
+                <button type="button" class="create-btn">
+                  Create New Product
+                </button>
+                <div class="search-bar">
+                  <div>
+                    <input id="input-search" type="text" placeholder="Search" />
+                    <button type="button" id="btn-search">Search</button>
+                  </div>
+                  <section>
+                    <label for="">Category</label>
+                    <select name="" id="filter-category"></select>
+                  </section>
+                  <section>
+                    <label for="">Price</label>
+                    <select name="" id="filter-price">
+                      <option value="0">Tất cả</option>
+                      <option value="1">2tr -> 4tr</option>
+                      <option value="2">4tr -> 8tr</option>
+                      <option value="3">8tr -> 12tr</option>
+                      <option value="4">12tr -> 15tr</option>
+                      <option value="5">> 15tr</option>
+                    </select>
+                  </section>
+                  <section>
+                    <label for="">Sort</label>
+                    <select name="" id="sortall">
+                      <option value="bandau">Ban đầu</option>
+                      <option value="tangdan">Tăng dần</option>
+                      <option value="giamdan">Giam dần</option>
+                    </select>
+                  </section>
+                </div>
+
+                <table>
+                  <thead>
+                    <tr id="list-newp">
+                      <th>Id</th>
+                      <th>Image</th>
+                      <th>Product Name</th>
+                      <th>Price</th>
+                      <!-- <th>Color</th> -->
+                      <th>Category</th>
+                      <th>Inventory</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody class="list-category"></tbody>
+                </table>
+
+                <div
+                  class="pagination"
+                  id="pagination-product"
+                  onchange="renderSkills()"
+                ></div>
+              </section>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div id="overlay">
+          <div id="newproduct">
+            <form action="" id="createForm">
+              <h2 id="texth2">Create New Product</h2>
+              <div class="form-input">
+                <label for="">Product Name:</label>
+
+                <input id="nameiput" type="text" /> <br />
+                <p id="error"></p>
+              </div>
+              <div class="form-input">
+                <label for="">Price:</label>
+                <input id="priceinput" type="number" /> <br />
+              </div>
+              <div class="form-input">
+                <label for="">Inventory:</label>
+                <input id="inventoryinput" type="text" /> <br />
+              </div>
+              <!-- <div class="form-input">
+          
+            <input type="text" /> <br />
+          </div> -->
+              <div class="product-category">
+                <label for="">Category:</label> <br />
+                <select id="inputcate" class="list-product">
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="form-1">
+                <label type="file" onchange="encodeImageFileAsURL(this)" for=""
+                  >Image:</label
+                >
+                <input
+                  id="inputimg"
+                  type="file"
+                  onchange="encodeImageFileAsURL(this)"
+                />
+                <a href="" style="color: yellow"></a>
+                <img width="100px" id="image-product" src="" alt="" />
+              </div>
+              <div class="button">
+                <button class="create" id="crate" type="button">Create</button>
+                <button class="cancel" id="cancel" type="button">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </body>
+      <script src="./product.js"></script>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Bootstrap Admin Template : Dream</title>
+    <!-- Bootstrap Styles-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="../assets/css/custom-styles.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"c
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ddvJu5q5YErqvRfZwm4QxpEGUSduPdL0NEnUZKQAq4s8aUh5rzfEZPlxbJ7qGcFX84c&usqp=CAU"
+    />
+    <!-- Google Fonts-->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./category.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Dream</a>
+        </div>
+
+        <ul class="nav navbar-top-links navbar-right">
+          <li class="dropdown">
+            <div id="navbar-right-top">
+              <span id="text-name-account" style="color: white"></span>
+              <button id="login" type="button">Log In</button>
+              <img
+                style="width: 60px; height: 60px; border-radius: 50%"
+                src="https://tmssl.akamaized.net/images/foto/galerie/ronaldo-cristiano-2017-real-madrid-ballon-d-or-2016-0026751808hjpg-1698686328-120749.jpg?lm=1698686338"
+                alt=""
+              />
+              <i
+                id="btn-logout"
+                style="color: white"
+                class="fa-solid fa-right-from-bracket"
+              ></i>
+            </div>
+            <!-- /.dropdown-user -->
+          </li>
+          <!-- /.dropdown -->
+        </ul>
+      </nav>
+      <!--/. NAV TOP  -->
+      <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+          <ul class="nav" id="main-menu">
+            <li>
+              <a
+                style="background-color: palevioletred"
+                href="../manage-category/category.html"
+              >
+                <span> Category</span>
+              </a>
+              <a href="../manage-product/product.html">
+                <span>Product</span>
+              </a>
+              <a href="../manage-user/user.html">
+                <span>User List</span>
+              </a>
+              <a href="../manage-tablelistoder/listoder.html">
+                <span>List Oder</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /. NAV SIDE  -->
+      <div id="page-wrapper">
+        <div id="page-inner">
+          <div class="row"></div>
+
+          <!-- ngay day -->
+          <!-- bảng, form thêm, tìm kiếm<input>, sắp xếp<select-option> -->
+          <div class="menu-total">
+            <div class="menu-duong">
+              <label id="Updatename" for="">Thêm Danh Mục</label>
+              <input
+                id="category-input-name"
+                type="search"
+                name=""
+                id=""
+                placeholder="Tên danh mục"
+              />
+              <p id="error-1" style="color: red"></p>
+            </div>
+            <div class="menu-right">
+              <button type="button" id="btn-Agree">Đồng ý</button>
+              <button type="button" id="btn-Cancel">Hủy</button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="search-bar">
+              <div>
+                <input id="input-search" type="text" placeholder="Search" />
+                <button id="btn-search">Search</button>
+              </div>
+
+              <section>
+                <label for="">Sort</label>
+                <select name="" id="sortall">
+                  <option value="bandau">Ban đầu</option>
+                  <option value="tangdan">Tăng dần</option>
+                  <option value="giamdan">Gỉam dần</option>
+                </select>
+              </section>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Hành đông</th>
+                </tr>
+              </thead>
+
+              <tbody id="list-category">
+                <tr>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>A0</td>
+                  <td>
+                    <button>Update</button>
+                    <button onclick="deleteCategory">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- <div class="pagination">
+              <a href="#">&lt;</a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+              <a href="#">9</a>
+              <a href="#">10</a>
+              <a href="#">&gt;</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./categort.js"></script>
+  <script
+    src="https://kit.fontawesome.com/d214b8e9b3.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

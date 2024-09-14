@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký/ Đăng nhập</title>
+    <link rel="stylesheet" href="./regis.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ddvJu5q5YErqvRfZwm4QxpEGUSduPdL0NEnUZKQAq4s8aUh5rzfEZPlxbJ7qGcFX84c&usqp=CAU"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Start navbar -->
+      <nav class="navbar-list">
+        <ul class="navbar-list-items">
+          <li>
+            <img
+              style="width: 38px; width: 38px"
+              src="../z5618604952096_4f945234f0c313ec6ebd4090a8a78005.jpg"
+              alt=""
+            />
+            <p class="navbar-text">
+              HN: 11 Đường Ven Sông Lừ, Kim Liên, Đống Đa, HN
+              <br />
+              HCM: 62 Hoa Cau, Phường 7, Phú Nhuận, TP.HCM
+            </p>
+            <img
+              class="logo-main"
+              style="width: 180px; height: 70px"
+              src="https://marshallstorevietnam.vn/wp-content/uploads/2023/03/Marshall-Logo-1-2048x768.png"
+              alt=""
+            />
+          </li>
+
+          <li class="nav-hot">
+            <div class="search-nav1" style="visibility: hidden">
+              <i
+                id="search-nav1"
+                style="color: #af6349; font-size: large"
+                class="fa-solid fa-magnifying-glass"
+              ></i>
+            </div>
+            <img style="height: 45px" src="../phone.jpg" alt="" />
+            <p style="font-size: 13px">
+              0928.759.555 <br />
+              0394.678.121
+            </p>
+          </li>
+        </ul>
+      </nav>
+      <!-- end navbar -->
+      <!-- Star Hero -->
+      <nav class="navbar-hero">
+        <ul>
+          <li>
+            <a href="../DoanModule1/doan/Doan.html"
+              ><img
+                width="22px"
+                height="22px"
+                src="../DoanModule1/home.jpg"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="../DoanModule1/Sanpham1/categoryloa.html">LOA MARSHALL</a>
+          </li>
+          <li><a href="">PHỤ KIỆN MARSHALL</a></li>
+          <li><a href="">TAI NGHE MARSHALL </a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">LIÊN HỆ</a></li>
+          <li></li>
+        </ul>
+        <ul class="nav-menur">
+          <i
+            style="color: white; font-size: large"
+            class="fa-solid fa-magnifying-glass"
+          ></i>
+          <input type="text" name="" id="" />
+          <li class="test">
+            <i id="user" class="fa-regular fa-user"></i>
+          </li>
+          <span id="text-name-account" style="color: white; width: 30px"></span>
+          <li class="cart-shopping" style="margin-left: 30px">
+            <a href="../thanhtoan/thanhtoan.html">
+              <img
+                style="width: 18px; height: 18px; color: azure"
+                src="../DoanModule1/icons8-shopping-cart-64.png"
+                alt=""
+              />
+              <span
+                class="total-qty"
+                id="totalCart"
+                style="color: black; width: 30px"
+                >0</span
+              >
+            </a>
+          </li>
+          <li class="nav-flag">
+            <img
+              style="width: 21px; height: 15px"
+              src=".././DoanModule1/vietnam-flag-icon.png"
+              alt=""
+            />
+            <a href=""
+              ><p style="color: white; font-size: 13px; font-weight: 600">
+                VIETNAM
+              </p></a
+            >
+            <i
+              id="btn-logout"
+              style="color: red"
+              class="fa-solid fa-right-from-bracket"
+            ></i>
+          </li>
+        </ul>
+        <!-- End Hero -->
+      </nav>
+      <!-- End Hero -->
+    </header>
+    <main class="main-over">
+      <main>
+        <main id="test1" style="display: none">
+          <p>Đăng Nhập</p>
+          <div class="tk">
+            <label style="margin-bottom: 10px" for=""
+              >Tên tài khoản hoặc địa chỉ email
+              <span style="color: red">*</span>
+            </label>
+            <br />
+            <input id="iploginemail" class="ibt" type="email" required />
+          </div>
+          <div class="pass">
+            <label for="">Password <span style="color: red"> *</span> </label>
+            <br />
+            <input id="iploginpass" class="ibt" type="password" required />
+          </div>
+          <button id="login">Login</button>
+          <div class="total">
+            <div>
+              <input type="checkbox" />
+              <label for="">Remember</label>
+            </div>
+            <div class="Lost" style="font-size: 14px">Lost your password?</div>
+          </div>
+        </main>
+        <main id="test2">
+          <a href="./"></a>
+          <p>Đăng Ký</p>
+          <div class="tk">
+            <label style="margin-bottom: 10px" for=""
+              >Họ và tên
+              <span style="color: red">*</span>
+            </label>
+            <br />
+            <input class="ibt" id="inputname" type="text" required />
+            <p id="error1"></p>
+          </div>
+          <div class="tk">
+            <label style="margin-bottom: 10px" for=""
+              >Địa chỉ email
+              <span style="color: red">*</span>
+            </label>
+            <br />
+            <input class="ibt" id="inputemail" type="email" required />
+            <p id="error21" style="display: none">
+              Không được để trống xin vui lòng nhập lại
+            </p>
+          </div>
+          <div class="tk">
+            <label style="margin-bottom: 10px" for=""
+              >Phone Number
+              <span style="color: red">*</span>
+            </label>
+            <br />
+            <input class="ibt" id="inputphone" type="tel" required />
+            <p id="error3"></p>
+          </div>
+          <div class="tk">
+            <label style="margin-bottom: 10px" for=""
+              >Password
+              <span style="color: red">*</span>
+            </label>
+            <br />
+            <input class="ibt" id="inputpass" type="password" required />
+            <p id="error4"></p>
+          </div>
+
+          <div class="tk">
+            <label style="margin-bottom: 10px" for=""
+              >Password Confirmation
+              <span style="color: red">*</span>
+            </label>
+            <br />
+            <input id="inputpassconfirm" class="ibt" type="password" required />
+            <p id="error5"></p>
+          </div>
+          <div>
+            <input type="checkbox" id="terms" />
+            <label for="">i agree to the terms and conditions</label>
+          </div>
+
+          <button id="register">Đăng ký</button>
+        </main>
+      </main>
+      <main class="main-text">
+        <h3 style="font-size: 40px; color: black">Login</h3>
+        <p class="text-right">
+          Registering for this site allows you to access your order status and
+          history. Just fill in the fields below, and we'll get a new account
+          set up for you in no time. We will only ask you for information
+          necessary to make the purchase process faster and easier.
+        </p>
+        <button id="btn">Đăng nhập</button>
+      </main>
+    </main>
+
+    <footer class="footer-superhero">
+      <footer class="footer-up">
+        <p>
+          Hà Nội Store <a> <i class="fa-solid fa-chevron-right"> </i> </a>
+        </p>
+        <p>
+          Hà Nội Store <a> <i class="fa-solid fa-chevron-right"> </i> </a>
+        </p>
+        <p>
+          Hồ Chí Minh Store
+          <a> <i class="fa-solid fa-chevron-right"> </i> </a>
+        </p>
+        <p>
+          Hồ Chí Minh Store
+          <a> <i class="fa-solid fa-chevron-right"> </i> </a>
+        </p>
+      </footer>
+      <footer class="footer-main">
+        <footer>
+          <img src="../Image/logo-ms-footer.png" alt="" />
+          <p style="color: #cfcdd1">
+            Marshall Store Vietnam mong <br />
+            muốn đem đến những sản phẩm <br />
+            đẹp, chất lượng cùng những câu <br />
+            chuyện và những trải nghiệm mới <br />mẻ cho khách hàng của mình với
+            <br />
+            dịch vụ tốt nhất.
+          </p>
+
+          <p class="sb-ft">Subscribe</p>
+          <p>
+            <a href=""><img src="../Image/icons8-facebook-50.png" alt="" /></a>
+            <a href=""
+              ><img
+                style="scale: 1.4"
+                src="../Image/icons8-twitter-circled-50.png"
+                alt=""
+            /></a>
+            <a href=""
+              ><img src="../Image/icons8-pinterest-logo-50.png" alt=""
+            /></a>
+            <a href=""
+              ><img src="../Image/icons8-linkedin-logo-50.png" alt=""
+            /></a>
+            <a href=""><img src="../Image/icons8-telegram-50.png" alt="" /></a>
+          </p>
+        </footer>
+        <footer class="ft-right">
+          <ul>
+            <a href="">
+              <li><h3>Categories</h3></li></a
+            >
+            <a href=""> <li>Portable Speakers</li></a>
+            <a href=""><li>Home Speakers</li></a>
+            <a href=""> <li>Headphones</li></a>
+            <a href=""> <li>Phụ kiện Marshall</li> </a>
+          </ul>
+          <ul>
+            <li><h3>Useful Links</h3></li>
+            <li>Promotions</li>
+            <li>Stores</li>
+            <li>Our contacts</li>
+            <li>Delivery & Return</li>
+            <li>Outlet</li>
+          </ul>
+          <ul>
+            <li><h3>Useful Links</h3></li>
+            <li>Blog</li>
+            <li>Our contacts</li>
+            <li>Promotions</li>
+            <li>Stores</li>
+          </ul>
+          <ul>
+            <li><h3>MARSHALL STORE VIETNAM</h3></li>
+            <li>Đại lý/ Dự án:</li>
+            <li>Mail</li>
+            <li>marshallstorevietnam.vn@gmail.com</li>
+          </ul>
+        </footer>
+      </footer>
+      <footer class="ft-down">
+        <div>
+          <p class="hine">
+            Marshall Store Vietnam
+            <img src="./Image/icons8-c-24 (1).png" alt="" /> 2023
+          </p>
+        </div>
+        <div>
+          <img src="./Image/2023.png" alt="" />
+        </div>
+      </footer>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/d214b8e9b3.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/d214b8e9b3.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="./regis.js"></script>
+</html>
